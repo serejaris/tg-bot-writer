@@ -25,7 +25,7 @@ flowchart TB
     end
 
     subgraph storage["Репозиторий"]
-        CP["content-plan/<br/>YYYY-MM.md"]
+        CP["content-plan/content-plan.md"]
         D["posts/drafts/"]
         S["posts/scheduled/"]
         P["posts/published/"]
@@ -79,7 +79,9 @@ flowchart LR
 
     ROOT --> AGENTS["AGENTS.md<br/>правила для агента"]
     ROOT --> BRIEF["channel-brief.md<br/>профиль канала"]
-    ROOT --> PLAN["content-plan/<br/>план тем по месяцам"]
+    ROOT --> PLAN["content-plan/content-plan.md<br/>единый контент-план"]
+    ROOT --> RECIPES["recipes/<br/>каталог рецептов"]
+    ROOT --> RESEARCH["research/<br/>исследования"]
     ROOT --> POSTS["posts/"]
 
     POSTS --> DRAFTS["drafts/<br/>черновики"]
@@ -91,7 +93,7 @@ flowchart LR
 
 1. Заполни `channel-brief.md` — профиль канала.
 2. Открой папку в Cursor и опиши идею: *«Напиши пост про … на завтра»*.
-3. Агент сохранит файл в `posts/drafts/` или `posts/scheduled/` и обновит `content-plan/`.
+3. Агент сохранит файл в `posts/drafts/` или `posts/scheduled/` и обновит `content-plan/content-plan.md`.
 4. Проверь превью, при необходимости попроси правки.
 
 Правила работы агента — в [`AGENTS.md`](AGENTS.md).
