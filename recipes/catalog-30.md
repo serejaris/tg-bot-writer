@@ -1,251 +1,251 @@
 # Каталог: 30 рецептов (10 завтраков + 20 обедов)
 
-Семья 4 человека. Зима, продукты en estación. Время — активное, без учёта marinada.
+Семья 4 человека. Зима, сезонные продукты. Время — активное, без учёта маринада.
 
 ---
 
 ## Завтраки (1–10)
 
-### 1. Mate cocido con leche y tostadas — Мате с молоком и тосты
+### 1. Мате с молоком и тосты (mate cocido con leche y tostadas)
 
-**Описание:** Классический тёплый завтрак: mate cocido с leche, tostadas con queso y jamón.  
+**Описание:** Классический тёплый завтрак: мате с молоком, тосты с сыром и ветчиной.  
 **Время:** 15 мин  
-**Покупки:** yerba mate (para cocido), leche 1 L, pan lactal, queso cremoso, jamón cocido, azúcar  
-**Дети:** мягкий вкус, можно sin mate — solo leche caliente  
-**Источник:** традиция rioplatense
+**Покупки:** yerba mate (для mate cocido), молоко (leche) 1 л, хлеб для тостов (pan lactal), сливочный сыр (queso cremoso), ветчина (jamón cocido), сахар (azúcar)  
+**Дети:** мягкий вкус, можно без mate — только горячее молоко  
+**Источник:** традиция Рío de la Plata
 
-### 2. Medialunas con café con leche — Круассаны с кофе
+### 2. Круассаны с кофе (medialunas con café con leche)
 
-**Описание:** Быстрый weekend-завтраk из panadería + café con leche para adultos, leche para chicos.  
-**Время:** 5 мин (comprado)  
-**Покупки:** medialunas x8, leche, café, manteca  
-**Дети:** medialunas de grasa — favorito  
-**Источник:** cultura porteña
+**Описание:** Быстрый выходной завтрак из пекарни + кофе с молоком для взрослых, молоко для детей.  
+**Время:** 5 мин (покупные)  
+**Покупки:** круассаны (medialunas) x8, молоко (leche), кофе (café), сливочное масло (manteca)  
+**Дети:** medialunas de grasa — любимчик  
+**Источник:** культура Буэнос-Айреса
 
-### 3. Avena caliente con manzana y canela — Овсянка с яблоком
+### 3. Овсянка с яблоком и корицей (avena caliente con manzana y canela)
 
-**Описание:** Porridge de avena con manzana en cubos y canela — согревает в invierno.  
+**Описание:** Горячая овсянка с яблоком кубиками и корицей — согревает зимой.  
 **Время:** 20 мин  
-**Покупки:** avena 500 g, manzana x4, leche, canela, miel  
-**Дети:** dulce natural, sin azúcar extra  
-**Источник:** [Río Negro — desayunos invierno](https://www.rionegro.com.ar/estar-bien/desayunos-sin-harinas-para-el-invierno-5-recetas-calientes-saciantes-y-faciles-de-preparar-4599331/)
-
-### 4. Huevos revueltos con jamón y queso — Яичница с ветчиной и сыром
-
-**Описание:** Revuelto cremoso con jamón picado y queso rallado, pan tostado.  
-**Время:** 12 мин  
-**Покупки:** huevos x12 (semana), jamón, queso rallado, pan, manteca  
-**Дети:** proteína rápida, customizable  
-**Источник:** clásico familiar
-
-### 5. Panqueques de banana y avena — Банановые панкейки
-
-**Описание:** Sin harina refinada: banana pisada, huevos, avena — sartén antiadherente.  
-**Время:** 20 мин  
-**Покупки:** bananas x6, huevos, avena, canela, manteca  
-**Дети:** dulce, mano-friendly  
+**Покупки:** овсянка (avena) 500 г, яблоки (manzana) x4, молоко (leche), корица (canela), мёд (miel)  
+**Дети:** натуральная сладость, без лишнего сахара  
 **Источник:** [Río Negro](https://www.rionegro.com.ar/estar-bien/desayunos-sin-harinas-para-el-invierno-5-recetas-calientes-saciantes-y-faciles-de-preparar-4599331/)
 
-### 6. Tostadas francesas — Французские тосты
+### 4. Яичница с ветчиной и сыром (huevos revueltos con jamón y queso)
 
-**Описание:** Pan de ayer en huevo batido con leche y canela, dorado en manteca.  
+**Описание:** Нежная яичница с нарезанной ветчиной и тертым сыром, тосты.  
+**Время:** 12 мин  
+**Покупки:** яйца (huevos) x12, ветчина (jamón), тертый сыр (queso rallado), хлеб (pan), сливочное масло (manteca)  
+**Дети:** быстрый белок, легко адаптировать  
+**Источник:** семейная классика
+
+### 5. Банановые панкейки (panqueques de banana y avena)
+
+**Описание:** Без белой муки: размятый банан, яйца, овсянка — на антипригарной сковороде.  
+**Время:** 20 мин  
+**Покупки:** бананы (banana) x6, яйца (huevos), овсянка (avena), корица (canela), сливочное масло (manteca)  
+**Дети:** сладкие, удобно есть руками  
+**Источник:** [Río Negro](https://www.rionegro.com.ar/estar-bien/desayunos-sin-harinas-para-el-invierno-5-recetas-calientes-saciantes-y-faciles-de-preparar-4599331/)
+
+### 6. Французские тосты (tostadas francesas)
+
+**Описание:** Вчерашний хлеб в яичной смеси с молоком и корицей, обжаренный на масле.  
 **Время:** 15 мин  
-**Покупки:** pan, huevos, leche, canela, azúcar impalpable  
-**Дети:** postre-desayuno, miel encima  
-**Источник:** adaptación casera
+**Покупки:** хлеб (pan), яйца (huevos), молоко (leche), корица (canela), сахарная пудра (azúcar impalpable)  
+**Дети:** как десерт на завтрак, сверху мёд  
+**Источник:** домашняя адаптация
 
-### 7. Yogur con granola y mandarina — Йогурт с гранолой
+### 7. Йогурт с гранолой и мандарином (yogur con granola y mandarina)
 
-**Описание:** Yogur natural + granola casera (avena tostada, miel) + gajos de mandarina.  
-**Время:** 10 min (+ granola 25 min domingo)  
-**Покупки:** yogur natural 2 kg, avena, miel, mandarinas 1 kg  
-**Дети:** fruta de estación, crocante  
-**Источник:** nutrición invierno
+**Описание:** Натуральный йогурт + домашняя гранола (поджаренная овсянка, мёд) + дольки мандарина.  
+**Время:** 10 мин (+ гранола 25 мин в воскресенье)  
+**Покупки:** йогурт (yogur natural) 2 кг, овсянка (avena), мёд (miel), мандарины (mandarina) 1 кг  
+**Дети:** сезонный фрукт, хрустящая текстура  
+**Источник:** зимнее питание
 
-### 8. Licuado de banana, leche y miel — Банановый смузи
+### 8. Банановый смузи (licuado de banana, leche y miel)
 
-**Описание:** Licuado espeso: banana, leche, miel — para llevar en termo al colegio.  
-**Время:** 5 min  
-**Покупки:** bananas, leche, miel  
-**Дети:** bebible, sin cuchillo  
-**Источник:** vianda escolar
+**Описание:** Густой смузи: банан, молоко, мёд — в термос в школу.  
+**Время:** 5 мин  
+**Покупки:** бананы (banana), молоко (leche), мёд (miel)  
+**Дети:** пить без ножа и вилки  
+**Источник:** школьный ланч
 
-### 9. Huevo duro con pan y manteca — Яйца всмятку с хлебом
+### 9. Яйца всмятку с хлебом (huevo duro con pan y manteca)
 
-**Описание:** Huevos duros preparados domingo + pan con manteca y sal.  
-**Время:** 10 min (si ya cocidos: 3 min)  
-**Покупки:** huevos, pan, manteca, sal  
-**Дети:** fácil masticar, batch-friendly  
-**Источник:** [Para Ti — meal prep](https://www.parati.com.ar/lifestyle/chau-a-la-fiaca-de-decidir-la-guia-de-compra-inteligente-para-resolver-tus-comidas-de-toda-la-semana/)
+**Описание:** Яйца вкрутую, приготовленные в воскресенье + хлеб с маслом и солью.  
+**Время:** 10 мин (если уже сварены: 3 мин)  
+**Покупки:** яйца (huevos), хлеб (pan), сливочное масло (manteca), соль (sal)  
+**Дети:** легко жевать, удобно готовить заранее  
+**Источник:** [Para Ti](https://www.parati.com.ar/lifestyle/chau-a-la-fiaca-de-decidir-la-guia-de-compra-inteligente-para-resolver-tus-comidas-de-toda-la-semana/)
 
-### 10. Tortilla de papa (mini, desayuno) — Картофельная tortilla
+### 10. Картофельная тортилья, мини (tortilla de papa, desayuno)
 
-**Описание:** Mini tortilla de papa y cebolla — porción chica para desayuno salado.  
-**Время:** 25 min  
-**Покупки:** papas 1 kg, huevos, cebolla, aceite, sal  
-**Дети:** finger food tibio  
-**Источник:** cocina argentina
+**Описание:** Небольшая порция картофельной тортильи с луком — солёный завтрак.  
+**Время:** 25 мин  
+**Покупки:** картофель (papa) 1 кг, яйца (huevos), лук (cebolla), масло (aceite), соль (sal)  
+**Дети:** тёплая еда руками  
+**Источник:** аргентинская кухня
 
 ---
 
 ## Обеды (11–30)
 
-### 11. Guiso de lentejas — Чечевичное ragout
+### 11. Чечевичное рагу (guiso de lentejas)
 
-**Описание:** Guiso espeso con lentejas, papa, chorizo colorado, verduras — plato de olla invierno.  
-**Время:** 55 min  
-**Покупки:** lentejas 500 g, papa, cebolla, zanahoria, chorizo, pulpa de tomate, pimentón  
-**Дети:** suave si sin picante; pan para mojar  
-**Источник:** [La Nación — Lovegrove](https://www.lanacion.com.ar/recetas/el-guiso-de-lentejas-de-la-chef-marcela-lovegrove-para-combtir-el-frio-otonal-nid13052026/)
+**Описание:** Густое зимнее рагу: чечевица, картофель, красный chorizo, овощи — всё в одной кастрюле.  
+**Время:** 55 мин  
+**Покупки:** чечевица (lentejas) 500 г, картофель (papa), лук (cebolla), морковь (zanahoria), красная колбаса (chorizo colorado), томатная паста (pulpa de tomate), паприка (pimentón)  
+**Дети:** мягко без острого; хлеб для макания  
+**Источник:** [La Nación](https://www.lanacion.com.ar/recetas/el-guiso-de-lentejas-de-la-chef-marcela-lovegrove-para-combtir-el-frio-otonal-nid13052026/)
 
-### 12. Guiso de fideos con carne y papa — Лапша с мясом и картофелем
+### 12. Лапша с мясом и картофелем (guiso de fideos con carne y papa)
 
-**Описание:** Carne (paleta), fideos, papa, morrón — una olla, 6 porciones.  
-**Время:** 50 min  
-**Покупки:** fideos 500 g, carne paleta 800 g, papa 1 kg, cebolla, morrón, tomate triturado  
-**Дети:** clásico argentino #1  
+**Описание:** Мясо (лопатка), макароны (fideos), картофель, болгарский перец — одна кастрюля на 6 порций.  
+**Время:** 50 мин  
+**Покупки:** макароны (fideos) 500 г, говядина лопатка (carne paleta) 800 г, картофель (papa) 1 кг, лук (cebolla), перец (morrón), протёртые томаты (tomate triturado)  
+**Дети:** аргентинская классика №1  
 **Источник:** [Infobae](https://www.infobae.com/tendencias/2026/04/08/receta-de-guiso-de-fideos-con-carne-y-papa-rapida-y-facil/)
 
-### 13. Puchero (día 1: caldo y verduras) — Пuchero
+### 13. Пучero — бульон и овощи (puchero, caldo y verduras)
 
-**Описание:** Osobuco, verduras de invierno, garbanzos — caldo día 1, carnes día 2.  
-**Время:** 2 h  
-**Покупки:** osobuco 1 kg, garbanzos, papa, zanahoria, zapallo, repollo, chorizo  
-**Дети:** caldo con fideos finos aparte  
-**Источник:** [El Día — puchero](https://www.eldia.com/gourmet/el-regreso-del-puchero-el-ritual-que-transforma-el-frio-en-un-banquete-casero-gourmet_1779956809)
+**Описание:** Говядина на кости, зимние овощи, нут — день 1: бульон, день 2: мясо и овощи.  
+**Время:** 2 ч  
+**Покупки:** говядина на кости (osobuco) 1 кг, нут (garbanzos), картофель (papa), морковь (zanahoria), тыква (zapallo), капуста (repollo), chorizo  
+**Дети:** прозрачный бульон с тонкой лапшой отдельно  
+**Источник:** [El Día](https://www.eldia.com/gourmet/el-regreso-del-puchero-el-ritual-que-transforma-el-frio-en-un-banquete-casero-gourmet_1779956809)
 
-### 14. Sopa cremosa de zapallo — Крем-суп из тыквы
+### 14. Крем-суп из тыквы (sopa cremosa de zapallo)
 
-**Описание:** Zapallo anco, puerro, crema de leche — blender, servir con crutones.  
-**Время:** 40 min  
-**Покупки:** zapallo 1 kg, puerro, cebolla, caldo, crema, pan para crutones  
-**Дети:** textura suave, dulzor natural  
-**Источник:** estación invierno
+**Описание:** Тыква anco, лук-порей, сливки — в блендере, подавать с гренками.  
+**Время:** 40 мин  
+**Покупки:** тыква (zapallo) 1 кг, лук-порей (puerro), лук (cebolla), бульон (caldo), сливки (crema), хлеб (pan) для гренок  
+**Дети:** гладкая текстура, естественная сладость  
+**Источник:** зимний сезон
 
-### 15. Milanesas de pollo con puré — Котлеты с пюре
+### 15. Куриные отбивные с пюре (milanesas de pollo con puré)
 
-**Описание:** Pechuga empanada, puré de papa con manteca y leche.  
-**Время:** 45 min  
-**Покупки:** pechuga pollo 1 kg, pan rallado, huevos, papa 2 kg, leche, manteca  
-**Дети:** aprobado universal  
-**Источник:** Paulina Cocina / clásico
+**Описание:** Панированная грудка, картофельное пюре с маслом и молоком.  
+**Время:** 45 мин  
+**Покупки:** куриная грудка (pechuga pollo) 1 кг, панировочные сухари (pan rallado), яйца (huevos), картофель (papa) 2 кг, молоко (leche), сливочное масло (manteca)  
+**Дети:** универсальный хит  
+**Источник:** Paulina Cocina
 
-### 16. Tarta de zapallito, zanahoria y queso — Овощной пирог
+### 16. Овощной пирог с кабачком (tarta de zapallito, zanahoria y queso)
 
-**Описание:** Masa casera o comprada, relleno de zapallito, zanahoria rallada, queso.  
-**Время:** 50 min  
-**Покупки:** zapallitos x6, zanahoria, queso cremoso, huevos, harina, manteca  
-**Дети:** esconde verduras  
-**Источник:** [Para Ti — menú económico](https://www.parati.com.ar/recetas/menu-economico-semanal-5-recetas-rendidoras-y-nutritivas-para-cuidar-el-bolsillo-3/)
+**Описание:** Домашнее или покупное тесто, начинка из кабачка, тертой моркови и сыра.  
+**Время:** 50 мин  
+**Покупки:** кабачки (zapallito) x6, морковь (zanahoria), сливочный сыр (queso cremoso), яйца (huevos), мука (harina), сливочное масло (manteca)  
+**Дети:** овощи «спрятаны» в начинке  
+**Источник:** [Para Ti](https://www.parati.com.ar/recetas/menu-economico-semanal-5-recetas-rendidoras-y-nutritivas-para-cuidar-el-bolsillo-3/)
 
-### 17. Pastel de papa y carne — Картофельная запеканка с мясом
+### 17. Картофельная запеканка с фаршем (pastel de papa y carne)
 
-**Описание:** Carne molida salteada, capa de puré gratinada con queso.  
-**Время:** 1 h  
-**Покупки:** carne molida 600 g, papa 2 kg, queso rallado, cebolla, huevo  
+**Описание:** Обжаренный фарш, слой картофельного пюре с сыром запечён сверху.  
+**Время:** 1 ч  
+**Покупки:** говяжий фарш (carne molida) 600 г, картофель (papa) 2 кг, тертый сыр (queso rallado), лук (cebolla), яйцо (huevo)  
 **Дети:** comfort food  
-**Источник:** cocina casera argentina
+**Источник:** домашняя аргентинская кухня
 
-### 18. Arroz con pollo — Рис с курицей
+### 18. Рис с курицей (arroz con pollo)
 
-**Описание:** Pollo troceado, arroz, morrón, arvejas — paella criolla simple.  
-**Время:** 45 min  
-**Покупки:** arroz 1 kg, pollo entero o muslos, morrón, arvejas (congeladas), cebolla  
-**Дети:** arroz siempre funciona  
-**Источник:** [Para Ti — compra inteligente](https://www.parati.com.ar/lifestyle/chau-a-la-fiaca-de-decidir-la-guia-de-compra-inteligente-para-resolver-tus-comidas-de-toda-la-semana/)
-
-### 19. Cazuela de pollo y verduras — Куриная казuela
-
-**Описание:** Muslos con zapallo, papa, choclo en conserva, arroz pequeño.  
-**Время:** 50 min  
-**Покупки:** muslos pollo, zapallo, papa, choclo enlatado, arroz, cebolla verdeo  
-**Дети:** caldo espeso, no picante  
-**Источник:** norte argentino adaptado
-
-### 20. Omelette de espinaca con ensalada — Омлет со шпинатом
-
-**Описание:** Espinaca salteada dentro de omelette, ensalada de rúcula y remolacha.  
-**Время:** 25 min  
-**Покупки:** espinaca 500 g, huevos, rúcula, remolacha cocida, queso  
-**Дети:** omelette plain sin espinaca para picky eaters  
-**Источник:** [Para Ti — omelette espinaca](https://www.parati.com.ar/lifestyle/chau-a-la-fiaca-de-decidir-la-guia-de-compra-inteligente-para-resolver-tus-comidas-de-toda-la-semana/)
-
-### 21. Ensalada de arroz con atún — Рисовый салат с тунцом
-
-**Описание:** Arroz frío, atún, huevo duro, tomate, maíz — vianda o almuerzo ligero.  
-**Время:** 30 min (arroz pre-cocido: 15)  
-**Покупки:** arroz, atún x4 latas, huevos, tomate, choclo enlatado, mayonesa  
-**Дети:** frío OK en invierno? servir tibio  
+**Описание:** Курица кусочками, рис, перец, горошек — простая «испанская» паэлья.  
+**Время:** 45 мин  
+**Покупки:** рис (arroz) 1 кг, целая курица (pollo) или бёдра (muslos), перец (morrón), горошек (arvejas), лук (cebolla)  
+**Дети:** рис всегда заходит  
 **Источник:** [Para Ti](https://www.parati.com.ar/lifestyle/chau-a-la-fiaca-de-decidir-la-guia-de-compra-inteligente-para-resolver-tus-comidas-de-toda-la-semana/)
 
-### 22. Berenjenas al horno tipo lasaña — Баклажаны «лазанья»
+### 19. Куриная казуэла (cazuela de pollo y verduras)
 
-**Описание:** Capas de berenjena, carne molida, salsa tomate, queso — sin pasta.  
-**Время:** 1 h  
-**Покупки:** berenjenas x3, carne molida 500 g, tomate triturado, queso, cebolla  
-**Дети:** queso ayuda; capas finas  
-**Источник:** [Para Ti — menú económico](https://www.parati.com.ar/recetas/menu-economico-semanal-5-recetas-rendidoras-y-nutritivas-para-cuidar-el-bolsillo-3/)
+**Описание:** Бёдра с тыквой, картофелем, консервированной кукурузой и рисом.  
+**Время:** 50 мин  
+**Покупки:** куриные бёдра (muslos pollo), тыква (zapallo), картофель (papa), кукуруза в банке (choclo enlatado), рис (arroz), зелёный лук (cebolla de verdeo)  
+**Дети:** густой бульон, не острый  
+**Источник:** север Аргентины, адаптация
 
-### 23. Sopa de ave con fideos — Куриный суп с лапшой
+### 20. Омлет со шпинатом и салатом (omelette de espinaca con ensalada)
 
-**Описание:** Caldo de pollo casero, fideos cabello de ángel, zanahoria, perejil.  
-**Время:** 1 h 15  
-**Покупки:** pollo entero o carcasas, fideos finos, zanahoria, cebolla, perejil  
-**Дети:** cuando hay resfrío — ideal  
-**Источник:** clásico maternal
+**Описание:** Шпинат в омлете, салат из рукколы и свёклы.  
+**Время:** 25 мин  
+**Покупки:** шпинат (espinaca) 500 г, яйца (huevos), руккола (rúcula), свёкла (remolacha), сыр (queso)  
+**Дети:** омлет без шпината — отдельная порция для приверед  
+**Источник:** [Para Ti](https://www.parati.com.ar/lifestyle/chau-a-la-fiaca-de-decidir-la-guia-de-compra-inteligente-para-resolver-tus-comidas-de-toda-la-semana/)
 
-### 24. Tarta de acelga y queso — Швартовый пирог
+### 21. Рисовый салат с тунцом (ensalada de arroz con atún)
 
-**Описание:** Acelga blanqueada, ricota o queso cremoso, masa quebrada.  
-**Время:** 55 min  
-**Покупки:** acelga 1 manojo grande, queso, huevos, harina, manteca  
-**Дети:** verde «escondido» en queso  
+**Описание:** Рис, тунец, яйцо вкрутую, помидор, кукуруза — ланч или лёгкий обед.  
+**Время:** 30 мин (рис готов: 15)  
+**Покупки:** рис (arroz), тунец (atún) x4 банки, яйца (huevos), помидор (tomate), кукуруза (choclo enlatado), майонез (mayonesa)  
+**Дети:** подавать тёплым зимой  
+**Источник:** [Para Ti](https://www.parati.com.ar/lifestyle/chau-a-la-fiaca-de-decidir-la-guia-de-compra-inteligente-para-resolver-tus-comidas-de-toda-la-semana/)
+
+### 22. Баклажаны «лазанья» (berenjenas al horno tipo lasaña)
+
+**Описание:** Слои баклажана, фарша, томатного соуса и сыра — без пасты.  
+**Время:** 1 ч  
+**Покупки:** баклажаны (berenjena) x3, говяжий фарш (carne molida) 500 г, протёртые томаты (tomate triturado), сыр (queso), лук (cebolla)  
+**Дети:** сыр помогает; тонкие слои  
+**Источник:** [Para Ti](https://www.parati.com.ar/recetas/menu-economico-semanal-5-recetas-rendidoras-y-nutritivas-para-cuidar-el-bolsillo-3/)
+
+### 23. Куриный суп с лапшой (sopa de ave con fideos)
+
+**Описание:** Домашний куриный бульон, тонкая лапша, морковь, петрушка.  
+**Время:** 1 ч 15 мин  
+**Покупки:** целая курица или кости (pollo) или кости (carcasas), тонкая лапша (fideos finos), морковь (zanahoria), лук (cebolla), петрушка (perejil)  
+**Дети:** идеально при простуде  
+**Источник:** материнская классика
+
+### 24. Пирог с мангольдом и сыром (tarta de acelga y queso)
+
+**Описание:** Бланшированный мангольд, ricotta или сливочный сыр, слоёное тесто.  
+**Время:** 55 мин  
+**Покупки:** мангольд (acelga) 1 большой пучок, сыр (queso) или ricotta (ricota), яйца (huevos), мука (harina), сливочное масло (manteca)  
+**Дети:** зелень спрятана в сыр  
 **Источник:** Paulina Cocina
 
-### 25. Fideos con salsa bolognesa — Паста болоньезе
+### 25. Паста болоньезе (fideos con salsa bolognesa)
 
-**Описание:** Salsa de carne molida, cebolla, tomate — batch domingo, congelar.  
-**Время:** 40 min  
-**Покупки:** fideos 500 g, carne molida 400 g, tomate, cebolla, ajo  
-**Дети:** top 3 pasta  
-**Источник:** [Para Ti — fideos bolognesa](https://www.parati.com.ar/lifestyle/chau-a-la-fiaca-de-decidir-la-guia-de-compra-inteligente-para-resolver-tus-comidas-de-toda-la-semana/)
+**Описание:** Соус из фарша, лука, томатов — готовить в воскресенье, замораживать.  
+**Время:** 40 мин  
+**Покупки:** макароны (fideos) 500 г, говяжий фарш (carne molida) 400 г, помидор (tomate), лук (cebolla), чеснок (ajo)  
+**Дети:** топ-3 среди пасты  
+**Источник:** [Para Ti](https://www.parati.com.ar/lifestyle/chau-a-la-fiaca-de-decidir-la-guia-de-compra-inteligente-para-resolver-tus-comidas-de-toda-la-semana/)
 
-### 26. Pollo al horno con batata — Запечённая курица с бататом
+### 26. Запечённая курица с бататом (pollo al horno con batata)
 
-**Описание:** Muslos con batata y cebolla asados — una fuente, poco trabajo.  
-**Время:** 1 h  
-**Покупки:** muslos pollo 1.2 kg, batata 1 kg, cebolla, aceite, romero seco  
-**Дети:** dulzor de batata  
-**Источник:** [Para Ti — pollo horno](https://www.parati.com.ar/lifestyle/chau-a-la-fiaca-de-decidir-la-guia-de-compra-inteligente-para-resolver-tus-comidas-de-toda-la-semana/)
+**Описание:** Бёдра с бататом и луком в одной форме — минимум работы.  
+**Время:** 1 ч  
+**Покупки:** куриные бёдра (muslos pollo) 1,2 кг, батат (batata) 1 кг, лук (cebolla), масло (aceite), сушеный розмарин (romero)  
+**Дети:** сладость батата  
+**Источник:** [Para Ti](https://www.parati.com.ar/lifestyle/chau-a-la-fiaca-de-decidir-la-guia-de-compra-inteligente-para-resolver-tus-comidas-de-toda-la-semana/)
 
-### 27. Tortilla de papa (almuerzo) — Картофельная tortilla
+### 27. Картофельная тортилья (tortilla de papa, almuerzo)
 
-**Описание:** Porción grande con ensalada mixta — plato único.  
-**Время:** 30 min  
-**Покупки:** papa, huevos, cebolla, aceite, lechuga  
-**Дети:** porción mediana + ketchup  
-**Источник:** cocina argentina
+**Описание:** Большая порция с микс-салатом — блюдо на один приём.  
+**Время:** 30 мин  
+**Покупки:** картофель (papa), яйца (huevos), лук (cebolla), масло (aceite), салат (lechuga)  
+**Дети:** средняя порция + кетчуп  
+**Источник:** аргентинская кухня
 
-### 28. Carbonada en olla — Карбонада
+### 28. Карбонада (carbonada criolla)
 
-**Описание:** Carne, papa, zapallo, choclo, arvejas — guiso húmedo invierno.  
-**Время:** 1 h 30  
-**Покупки:** carne cubos 700 g, papa, zapallo, choclo, arvejas, cebolla, morrón  
-**Дети:** dulce del zapallo y choclo  
-**Источник:** tradición criolla
+**Описание:** Говядина, картофель, тыква, кукуруза, горошек — густое зимнее рагу.  
+**Время:** 1 ч 30 мин  
+**Покупки:** говядина кубиками (carne) 700 г, картофель (papa), тыква (zapallo), кукуруза (choclo), горошек (arvejas), лук (cebolla), перец (morrón)  
+**Дети:** сладость тыквы и кукурузы  
+**Источник:** креольская традиция
 
-### 29. Ravioles con salsa fileto — Равиоли с томатным соусом
+### 29. Равиоли с томатным соусом (ravioles con salsa fileto)
 
-**Описание:** Ravioles de ricota (frescos), salsa de tomate casera, queso rallado.  
-**Время:** 25 min  
-**Покупки:** ravioles 1 kg, tomate triturado, ajo, albahaca, queso  
-**Дети:** domingo rápido  
+**Описание:** Свежие равиоли с ricotta, домашний томатный соус, тертый сыр.  
+**Время:** 25 мин  
+**Покупки:** равиоли (ravioles) 1 кг, протёртые томаты (tomate triturado), чеснок (ajo), базилик (albahaca), сыр (queso)  
+**Дети:** быстрый воскресный обед  
 **Источник:** Paulina Cocina
 
-### 30. Pastel de cerdo y calabaza — Запеканка из свинины и тыквы
+### 30. Запеканка из свинины и тыквы (pastel de cerdo y calabaza)
 
-**Описание:** Carne de cerdo picada más económica, calabaza cremosa, gratinado.  
-**Время:** 1 h  
-**Покупки:** cerdo picado 600 g, zapallo 800 g, cebolla, queso, pan rallado  
-**Дети:** textura suave  
-**Источник:** [Para Ti — pastel cerdo](https://www.parati.com.ar/recetas/menu-economico-semanal-5-recetas-rendidoras-y-nutritivas-para-cuidar-el-bolsillo-3/)
+**Описание:** Более доступный свиной фарш, кремовая тыква, запекание с сыром.  
+**Время:** 1 ч  
+**Покупки:** свиной фарш (cerdo picado) 600 г, тыква (zapallo) 800 г, лук (cebolla), сыр (queso), панировочные сухари (pan rallado)  
+**Дети:** мягкая текстура  
+**Источник:** [Para Ti](https://www.parati.com.ar/recetas/menu-economico-semanal-5-recetas-rendidoras-y-nutritivas-para-cuidar-el-bolsillo-3/)
