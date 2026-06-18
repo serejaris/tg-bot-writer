@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>План: автопубликация в Telegram — «Рецепт дня»</title>
+  <style>
+    :root {
+      --bg: #faf8f5;
+      --card: #ffffff;
+      --text: #2c2c2c;
+      --muted: #6b6560;
+      --accent: #c45c26;
+      --accent-soft: #fdeee4;
+      --green: #2d6a4f;
+      --green-soft: #e8f5ef;
+      --border: #e8e4df;
+      --link: #1a5fb4;
+      --human: #8b4513;
+      --human-soft: #fdf6f0;
+      --agent: #1e4d7b;
+      --agent-soft: #eef4fa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      font-size: 17px;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 0.5rem; }
+    h2 { font-size: 1.25rem; margin: 2.5rem 0 1rem; color: var(--accent); }
+    .lead { color: var(--muted); font-size: 1.05rem; margin-bottom: 2rem; }
+    .badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .done-box {
+      background: var(--green-soft);
+      border: 1px solid #b8dcc8;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .done-box h2 { color: var(--green); margin-top: 0; }
+    .flow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+      justify-content: center;
+      margin: 1.5rem 0 2rem;
+      padding: 1.25rem;
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+    .flow span {
+      background: var(--bg);
+      padding: 0.5rem 0.85rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+    .flow .arrow { color: var(--muted); font-size: 1.2rem; padding: 0; background: none; }
+    .step {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.35rem 1.5rem;
+      margin-bottom: 1rem;
+      position: relative;
+      padding-left: 4.5rem;
+    }
+    .step-num {
+      position: absolute;
+      left: 1.25rem;
+      top: 1.35rem;
+      width: 2.25rem;
+      height: 2.25rem;
+      background: var(--accent);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .step h3 { margin: 0 0 0.35rem; font-size: 1.1rem; }
+    .step p { margin: 0 0 0.75rem; color: var(--muted); font-size: 0.98rem; }
+    .who {
+      display: grid;
+      gap: 0.65rem;
+      margin-bottom: 0.85rem;
+    }
+    .who-box {
+      font-size: 0.9rem;
+      padding: 0.65rem 0.85rem;
+      border-radius: 8px;
+      line-height: 1.45;
+    }
+    .who-box ul { margin: 0.35rem 0 0; padding-left: 1.15rem; }
+    .who-box li { margin-bottom: 0.2rem; }
+    .who-human {
+      background: var(--human-soft);
+      border-left: 3px solid var(--human);
+    }
+    .who-human strong { color: var(--human); }
+    .who-agent {
+      background: var(--agent-soft);
+      border-left: 3px solid var(--agent);
+    }
+    .who-agent strong { color: var(--agent); }
+    .issue-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .issue-link:hover { text-decoration: underline; }
+    .parallel {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin: -0.5rem 0 1rem 4.5rem;
+      font-style: italic;
+    }
+    .schedule {
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      margin-top: 1rem;
+    }
+    .schedule-row {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      border-bottom: 1px solid var(--border);
+    }
+    .schedule-row:last-child { border-bottom: none; }
+    .schedule-row div { padding: 0.85rem 1rem; }
+    .schedule-row div:first-child {
+      background: var(--bg);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .epic {
+      margin-top: 2.5rem;
+      padding: 1.25rem 1.5rem;
+      background: linear-gradient(135deg, #fff 0%, var(--accent-soft) 100%);
+      border-radius: 14px;
+      border: 1px solid #f0d4c4;
+      text-align: center;
+    }
+    .epic a { font-size: 1.05rem; }
+    footer { margin-top: 3rem; text-align: center; color: var(--muted); font-size: 0.85rem; }
+    @media (max-width: 520px) {
+      .step { padding-left: 1.25rem; padding-top: 3.5rem; }
+      .step-num { top: 1rem; left: 1.25rem; }
+      .parallel { margin-left: 1.25rem; }
+      .schedule-row { grid-template-columns: 1fr; }
+      .schedule-row div:first-child { border-bottom: 1px solid var(--border); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="badge">Этап 2 — в работе</span>
+    <h1>Как «Рецепт дня» сам будет выходить в Telegram</h1>
+    <p class="lead">
+      Простой план без программирования с вашей стороны. Вы по-прежнему придумываете меню и тексты —
+      а канал будет публиковать их по расписанию, как будильник для постов.
+    </p>
+
+    <div class="done-box">
+      <h2>✓ Уже сделано (этап 1)</h2>
+      <ul style="margin: 0; padding-left: 1.25rem;">
+        <li>30 рецептов на завтрак и обед</li>
+        <li>Меню и контент-план на 30 дней</li>
+        <li>Списки покупок по неделям</li>
+        <li>Правила для агента, который пишет тексты</li>
+      </ul>
+      <p style="margin: 1rem 0 0; font-size: 0.95rem; color: var(--muted);">
+        Всё это лежит в папке проекта — тексты готовы, осталось «подключить провод» к Telegram.
+      </p>
+    </div>
+
+    <h2>Как это будет работать</h2>
+    <div class="flow">
+      <span>📝 Текст поста<br>готов в файле</span>
+      <span class="arrow">→</span>
+      <span>🤖 Бот<br>берёт по дате</span>
+      <span class="arrow">→</span>
+      <span>⏰ По расписанию<br>8:00 или 10:00</span>
+      <span class="arrow">→</span>
+      <span>📢 Канал<br>«Рецепт дня»</span>
+    </div>
+
+    <h2>Шаги — по порядку</h2>
+    <p style="color: var(--muted); margin-top: -0.5rem;">
+      Каждый шаг — отдельная задача на GitHub. В каждой — кто что делает:
+      <span style="color: var(--human); font-weight: 600;">👤 вы</span> или
+      <span style="color: var(--agent); font-weight: 600;">🤖 агент в Cursor</span>.
+    </p>
+
+    <article class="step">
+      <div class="step-num">1</div>
+      <h3>Создать канал и описать его</h3>
+      <p>Завести Telegram-канал «Рецепт дня», придумать @username, записать ссылку в профиль канала проекта.</p>
+      <div class="who">
+        <div class="who-box who-human">
+          <strong>👤 Вы</strong>
+          <ul>
+            <li>Создать канал в Telegram (или выбрать существующий)</li>
+            <li>Придумать @username и прислать агенту публичную ссылку</li>
+            <li>После шага 2 — добавить бота администратором с правом публиковать посты</li>
+          </ul>
+        </div>
+        <div class="who-box who-agent">
+          <strong>🤖 Агент</strong>
+          <ul>
+            <li>Записать название, @username и ссылку в <code>channel-brief.md</code></li>
+            <li>Дать пошаговую подсказку, как добавить бота админом (когда бот будет готов)</li>
+            <li>Обновить задачу #3 на GitHub по мере готовности</li>
+          </ul>
+        </div>
+      </div>
+      <a class="issue-link" href="https://github.com/serejaris/tg-bot-writer/issues/3" target="_blank" rel="noopener">Задача #3 на GitHub →</a>
+    </article>
+
+    <article class="step">
+      <div class="step-num">2</div>
+      <h3>Завести бота-помощника</h3>
+      <p>Через BotFather создаётся «робот», который умеет отправлять сообщения в ваш канал. Пароль бота хранится отдельно — не в интернете для всех.</p>
+      <div class="who">
+        <div class="who-box who-human">
+          <strong>👤 Вы</strong>
+          <ul>
+            <li>Написать <a href="https://t.me/BotFather" target="_blank" rel="noopener">@BotFather</a> и создать бота</li>
+            <li>Скопировать токен и передать агенту <em>безопасно</em> (не в чат, не в GitHub) — например, в локальный файл <code>.env</code></li>
+            <li>Добавить бота админом канала (шаг 1)</li>
+          </ul>
+        </div>
+        <div class="who-box who-agent">
+          <strong>🤖 Агент</strong>
+          <ul>
+            <li>Настроить <code>.env</code> и убедиться, что секреты не попадают в git</li>
+            <li>Написать простую команду «отправить тестовый пост в канал»</li>
+            <li>Объяснить, что делать, если токен или права неверные</li>
+          </ul>
+        </div>
+      </div>
+      <a class="issue-link" href="https://github.com/serejaris/tg-bot-writer/issues/4" target="_blank" rel="noopener">Задача #4 на GitHub →</a>
+    </article>
+
+    <p class="parallel">После шага 1 можно параллельно: шаг 2 (бот) и шаг 3 (оформление) ↓</p>
+
+    <article class="step">
+      <div class="step-num">3</div>
+      <h3>Красиво оформить пост в Telegram</h3>
+      <p>Текст из файла должен правильно выглядеть в канале: жирный заголовок, список продуктов, совет в «спойлере».</p>
+      <div class="who">
+        <div class="who-box who-human">
+          <strong>👤 Вы</strong>
+          <ul>
+            <li>Открыть тестовый пост в канале и сказать: «нравится» или «поправить»</li>
+            <li>Уточнить, если что-то обрезалось или выглядит криво</li>
+          </ul>
+        </div>
+        <div class="who-box who-agent">
+          <strong>🤖 Агент</strong>
+          <ul>
+            <li>Написать преобразование текста из файла в формат Telegram</li>
+            <li>Проверить на реальных постах из папки <code>posts/scheduled/</code></li>
+            <li>Учесть правила из <code>channel-brief.md</code>: жирный, спойлер, моноширинные ингредиенты</li>
+          </ul>
+        </div>
+      </div>
+      <a class="issue-link" href="https://github.com/serejaris/tg-bot-writer/issues/5" target="_blank" rel="noopener">Задача #5 на GitHub →</a>
+    </article>
+
+    <article class="step">
+      <div class="step-num">4</div>
+      <h3>Настроить расписание</h3>
+      <p>Каждый день в 8:00 — пост с завтраком и обедом. Каждое воскресенье в 10:00 — список покупок на неделю. Бот сам находит нужный файл по дате в контент-плане.</p>
+      <div class="who">
+        <div class="who-box who-human">
+          <strong>👤 Вы</strong>
+          <ul>
+            <li>Решить, где будет «будильник» (ваш Mac, сервер, облако) — агент подскажет варианты</li>
+            <li>Один раз проверить: пост вышел в 8:00 или 10:00</li>
+            <li>Следить, что в контент-плане на дату есть готовый файл</li>
+          </ul>
+        </div>
+        <div class="who-box who-agent">
+          <strong>🤖 Агент</strong>
+          <ul>
+            <li>Настроить автозапуск по расписанию (время Аргентины)</li>
+            <li>Связать дату → строка в <code>content-plan.md</code> → файл поста</li>
+            <li>Написать инструкцию «как включить / выключить» простым языком</li>
+          </ul>
+        </div>
+      </div>
+      <a class="issue-link" href="https://github.com/serejaris/tg-bot-writer/issues/6" target="_blank" rel="noopener">Задача #6 на GitHub →</a>
+    </article>
+
+    <article class="step">
+      <div class="step-num">5</div>
+      <h3>Архив опубликованного</h3>
+      <p>После выхода поста система помечает его «опубликован» и убирает в архив — чтобы не публиковать дважды и видеть, что уже вышло.</p>
+      <div class="who">
+        <div class="who-box who-human">
+          <strong>👤 Вы</strong>
+          <ul>
+            <li>Почти ничего — всё автоматически</li>
+            <li>По желанию: заглянуть в контент-план и убедиться, что статус «опубликован»</li>
+          </ul>
+        </div>
+        <div class="who-box who-agent">
+          <strong>🤖 Агент</strong>
+          <ul>
+            <li>После отправки в канал — обновить статус в <code>content-plan.md</code></li>
+            <li>Перенести файл из «запланировано» в «архив» (<code>posts/published/</code>)</li>
+            <li>Защита от двойной публикации одного и того же поста</li>
+          </ul>
+        </div>
+      </div>
+      <a class="issue-link" href="https://github.com/serejaris/tg-bot-writer/issues/7" target="_blank" rel="noopener">Задача #7 на GitHub →</a>
+    </article>
+
+    <article class="step">
+      <div class="step-num">6</div>
+      <h3>Обновить схему проекта</h3>
+      <p>Когда всё работает — обновить картинку-план в README, чтобы было видно: этап 2 завершён.</p>
+      <div class="who">
+        <div class="who-box who-human">
+          <strong>👤 Вы</strong>
+          <ul>
+            <li>Открыть обновлённую схему и сказать, понятно ли</li>
+            <li>Закрыть эпик #1, когда все шаги готовы</li>
+          </ul>
+        </div>
+        <div class="who-box who-agent">
+          <strong>🤖 Агент</strong>
+          <ul>
+            <li>Обновить диаграммы в <code>README.md</code> — этап 2 больше не «планируется»</li>
+            <li>Кратко описать: как вручную отправить пост и как работает расписание</li>
+            <li>Согласовать с правилами в <code>AGENTS.md</code></li>
+          </ul>
+        </div>
+      </div>
+      <a class="issue-link" href="https://github.com/serejaris/tg-bot-writer/issues/8" target="_blank" rel="noopener">Задача #8 на GitHub →</a>
+    </article>
+
+    <h2>Расписание публикаций</h2>
+    <div class="schedule">
+      <div class="schedule-row">
+        <div>Пн–Сб</div>
+        <div><strong>8:00</strong> (время Аргентины) — пост дня: завтрак + обед на сегодня</div>
+      </div>
+      <div class="schedule-row">
+        <div>Воскресенье</div>
+        <div><strong>10:00</strong> — список покупок на следующую неделю</div>
+      </div>
+    </div>
+
+    <div class="epic">
+      <p style="margin: 0 0 0.75rem; color: var(--muted);">Вся работа этапа 2 — один большой проект:</p>
+      <a class="issue-link" href="https://github.com/serejaris/tg-bot-writer/issues/1" target="_blank" rel="noopener">Эпик #1 — Telegram-канал, бот и автопубликация →</a>
+    </div>
+
+    <footer>
+      tg-bot-writer ·
+      <a href="https://serejaris.github.io/tg-bot-writer/" style="color: var(--link);">serejaris.github.io/tg-bot-writer</a>
+    </footer>
+  </div>
+</body>
+</html>

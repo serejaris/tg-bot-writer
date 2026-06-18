@@ -96,4 +96,6 @@ flowchart LR
 3. Агент сохранит файл в `posts/drafts/` или `posts/scheduled/` и обновит `content-plan/content-plan.md`.
 4. Проверь превью, при необходимости попроси правки.
 
+**План этапа 2** (канал, бот, автопубликация): [serejaris.github.io/tg-bot-writer](https://serejaris.github.io/tg-bot-writer/)
+
 Правила работы агента — в [`AGENTS.md`](AGENTS.md).
