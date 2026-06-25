@@ -83,7 +83,7 @@ class GLMJsonGenerator:
                 {"role": "user", "content": f"{instruction}\n\n{user_content}"},
             ],
             "temperature": 0.7,
-            "max_tokens": 1800,
+            "max_tokens": 4096,
             "stream": False,
         }
 

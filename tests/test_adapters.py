@@ -53,6 +53,7 @@ class AdapterTests(unittest.TestCase):
         self.assertEqual(directions[0]["id"], "d1")
         self.assertIn("Bearer key", http.calls[0]["headers"]["Authorization"])
         self.assertEqual(http.calls[0]["payload"]["model"], "glm-5.2")
+        self.assertGreaterEqual(http.calls[0]["payload"]["max_tokens"], 4096)
 
     def test_glm_generator_wraps_invalid_json_as_user_visible_error(self):
         adapters = load_adapters()
