@@ -27,12 +27,7 @@ class TelegramBotClient:
 
     def send_message(self, chat_id: int | str, text: str) -> None:
         payload = json.dumps(
-            {
-                "chat_id": chat_id,
-                "text": text,
-                "parse_mode": "Markdown",
-                "disable_web_page_preview": True,
-            },
+            build_bot_reply_payload(chat_id, text),
             ensure_ascii=False,
         ).encode("utf-8")
         request = urllib.request.Request(
@@ -43,6 +38,14 @@ class TelegramBotClient:
         )
         with urllib.request.urlopen(request, timeout=30):
             return
+
+
+def build_bot_reply_payload(chat_id: int | str, text: str) -> dict:
+    return {
+        "chat_id": chat_id,
+        "text": text,
+        "disable_web_page_preview": True,
+    }
 
 
 class LearningBot:
