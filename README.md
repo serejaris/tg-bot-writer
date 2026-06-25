@@ -89,7 +89,7 @@ python3 -m tg_bot_writer.telegram_bot
 | Переменная | Что хранит |
 |---|---|
 | `TELEGRAM_BOT_TOKEN` | токен Telegram-бота |
-| `TELEGRAM_CHANNEL_ID` | ID или username канала |
+| `TELEGRAM_CHANNEL_ID` | ID или username канала. Для числового ID канала нужен формат `-100...` |
 | `GLM_API_KEY` | ключ GLM API |
 | `GLM_MODEL` | модель, сейчас `glm-5.2` |
 | `GLM_BASE_URL` | endpoint GLM API |
