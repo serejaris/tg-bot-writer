@@ -69,6 +69,61 @@ class AdapterTests(unittest.TestCase):
 
         self.assertEqual(str(ctx.exception), "Не получилось получить текст от GLM. Попробуй ещё раз.")
 
+    def test_glm_generator_parses_fenced_json_and_normalizes_hook_ids(self):
+        adapters = load_adapters()
+        http = FakeHttpClient(
+            {
+                "choices": [
+                    {
+                        "message": {
+                            "content": (
+                                "```json\n"
+                                '{"hooks": ['
+                                '{"id":1,"text":"Первый хук"},'
+                                '{"id":2,"text":"Второй хук"},'
+                                '{"id":3,"text":"Третий хук"}]}'
+                                "\n```"
+                            )
+                        }
+                    }
+                ]
+            }
+        )
+        generator = adapters.GLMJsonGenerator(
+            api_key="key", model="glm-5.2", http_client=http
+        )
+
+        hooks = generator.hooks("идея", [], "brief")
+
+        self.assertEqual([item["id"] for item in hooks], ["h1", "h2", "h3"])
+        self.assertEqual(hooks[0]["text"], "Первый хук")
+
+    def test_glm_generator_normalizes_direction_ids(self):
+        adapters = load_adapters()
+        http = FakeHttpClient(
+            {
+                "choices": [
+                    {
+                        "message": {
+                            "content": (
+                                '{"directions": ['
+                                '{"id":1,"title":"A","summary":"a"},'
+                                '{"id":2,"title":"B","summary":"b"},'
+                                '{"id":3,"title":"C","summary":"c"}]}'
+                            )
+                        }
+                    }
+                ]
+            }
+        )
+        generator = adapters.GLMJsonGenerator(
+            api_key="key", model="glm-5.2", http_client=http
+        )
+
+        directions = generator.directions("идея", "brief")
+
+        self.assertEqual([item["id"] for item in directions], ["d1", "d2", "d3"])
+
     def test_telegram_publisher_sends_message_to_channel(self):
         adapters = load_adapters()
         http = FakeHttpClient({"ok": True, "result": {"message_id": 7}})

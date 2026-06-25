@@ -46,7 +46,7 @@ class GLMJsonGenerator:
             brief,
         )
         data = self._request_json(payload)
-        return data["directions"]
+        return _normalize_ids(data["directions"], prefix="d")
 
     def hooks(self, idea: str, directions: list[dict], brief: str) -> list[dict]:
         payload = self._chat_payload(
@@ -55,7 +55,7 @@ class GLMJsonGenerator:
             brief,
         )
         data = self._request_json(payload)
-        return data["hooks"]
+        return _normalize_ids(data["hooks"], prefix="h")
 
     def post(self, idea: str, direction: dict, hook: dict, brief: str) -> dict:
         payload = self._chat_payload(
@@ -98,7 +98,7 @@ class GLMJsonGenerator:
         )
         try:
             content = response["choices"][0]["message"]["content"]
-            return json.loads(content)
+            return json.loads(_extract_json_content(content))
         except (KeyError, IndexError, TypeError, json.JSONDecodeError) as exc:
             raise UserVisibleError("Не получилось получить текст от GLM. Попробуй ещё раз.") from exc
 
@@ -148,3 +148,26 @@ def read_brief(root: Path) -> str:
     if not brief_path.exists():
         raise UserVisibleError("Не найден channel-brief.md.")
     return brief_path.read_text(encoding="utf-8")
+
+
+def _extract_json_content(content: str) -> str:
+    clean = content.strip()
+    if clean.startswith("```"):
+        lines = clean.splitlines()
+        if lines and lines[0].startswith("```"):
+            lines = lines[1:]
+        if lines and lines[-1].strip() == "```":
+            lines = lines[:-1]
+        clean = "\n".join(lines).strip()
+    return clean
+
+
+def _normalize_ids(items: list[dict], *, prefix: str) -> list[dict]:
+    normalized = []
+    for index, item in enumerate(items, start=1):
+        updated = dict(item)
+        raw_id = updated.get("id")
+        if not isinstance(raw_id, str) or not raw_id.startswith(prefix):
+            updated["id"] = f"{prefix}{index}"
+        normalized.append(updated)
+    return normalized
