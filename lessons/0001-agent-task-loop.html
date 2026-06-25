@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Урок 0001: как вести агента через задачи</title>
+  <link rel="stylesheet" href="../assets/teach.css">
+</head>
+<body>
+  <main>
+    <article>
+      <h1>Урок 0001: как вести агента через задачи</h1>
+      <p class="lead">Один навык: не просить агента «сделай всё», а вести его через доказуемый цикл.</p>
+
+      <h2>Зачем это тебе</h2>
+      <p>В сессии с ботом агент не просто написал код. Он прошёл цепочку: issue → sub-issues → контракты → красные тесты → код → сервер → Telethon E2E → закрытие задач. Это и есть рабочий паттерн управления агентом.</p>
+
+      <div class="card check">
+        <strong>Твоя новая команда агенту:</strong>
+        <p>«Разбей это на GitHub sub-issues, сначала контракты, потом красные тесты, потом код, потом E2E. Перед закрытием каждой задачи сделай push и комментарий с итогом.»</p>
+      </div>
+
+      <h2>Мини-модель</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Если ты хочешь</th>
+            <th>Проси так</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Чтобы агент не потерял контекст</td>
+            <td>«Зафиксируй цель в parent issue»</td>
+          </tr>
+          <tr>
+            <td>Чтобы работа была управляемой</td>
+            <td>«Сделай sub-issues через GitHub Relationships»</td>
+          </tr>
+          <tr>
+            <td>Чтобы код не был случайным</td>
+            <td>«Сначала опиши контракты»</td>
+          </tr>
+          <tr>
+            <td>Чтобы агент не закрыл задачу слишком рано</td>
+            <td>«Покажи красные тесты, потом зелёные»</td>
+          </tr>
+          <tr>
+            <td>Чтобы результат был настоящим</td>
+            <td>«Проверь E2E глазами пользователя»</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Практика</h2>
+      <p>Ответь себе без подсказки:</p>
+      <ol>
+        <li>Что должно появиться раньше: код или красный тест?</li>
+        <li>Где должна быть связь между задачами: в тексте issue или в GitHub Relationships?</li>
+        <li>Когда можно закрывать issue: до push или после push?</li>
+        <li>Почему зелёные unit-тесты не заменяют Telethon E2E?</li>
+      </ol>
+
+      <details>
+        <summary>Проверить себя</summary>
+        <ol>
+          <li>Сначала красный тест.</li>
+          <li>В GitHub Relationships.</li>
+          <li>После push.</li>
+          <li>Unit-тесты проверяют куски кода, а E2E проверяет реальный пользовательский путь.</li>
+        </ol>
+      </details>
+
+      <h2>Что читать рядом</h2>
+      <ul>
+        <li><a href="../reference/agent-task-loop.html">Шпаргалка: цикл работы с агентом</a></li>
+        <li><a href="https://docs.github.com/en/rest/issues/sub-issues">GitHub Docs: sub-issues API</a></li>
+        <li><a href="https://docs.python.org/3/library/unittest.html">Python Docs: unittest</a></li>
+        <li><a href="https://github.com/serejaris/tg-bot-writer/issues/9">Кейс: issue #9</a></li>
+      </ul>
+
+      <div class="card">
+        <h3>Следующий вопрос агенту</h3>
+        <p>«Проверь мою следующую задачу: где там parent issue, где sub-issues, где контракты, где красные тесты, где E2E?»</p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
