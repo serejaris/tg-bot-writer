@@ -1,101 +1,118 @@
 # tg-bot-writer
 
-Контент-завод для Telegram-канала: идеи превращаются в тексты постов, складываются в репозиторий и готовятся к ежедневной публикации по расписанию.
+Контент-завод для Telegram-канала: идея превращается в направления, хуки, один готовый пост, запись в контент-план или публикацию в канал.
 
-Сейчас работает **этап 1** — тексты и контент-план. Автопубликация — следующий этап.
+Сейчас реализован учебный серверный бот для этапа 2.
 
 ## Пайплайн
 
 ```mermaid
 flowchart TB
-    subgraph input["Вход"]
-        U[("👤 Автор")]
-        I["Идея / тема / набросок"]
+    U[Автор в Telegram] --> BOT[Telegram-бот на сервере]
+    BOT --> BRIEF[channel-brief.md]
+    BOT --> GLM[GLM 5.2 API]
+    GLM --> D[3 направления]
+    GLM --> H[3 хука]
+    D --> CHOICE[Выбор направления и хука]
+    H --> CHOICE
+    CHOICE --> POST[1 готовый пост]
+    POST --> ACTION{Что сделать?}
+    ACTION -->|сохранить| DATE[Уточнить дату]
+    DATE --> FILE[posts/scheduled/]
+    FILE --> PLAN[content-plan/content-plan.md]
+    ACTION -->|опубликовать сейчас| TG[Telegram-канал]
+    TG --> PUB[posts/published/ позже]
+```
+
+## Архитектура
+
+```mermaid
+flowchart LR
+    subgraph server["CT305 / colvir-s05"]
+        SERVICE["systemd user service"]
+        CODE["tg_bot_writer.telegram_bot"]
+        ENV[".env на сервере"]
+        REPO["репозиторий"]
     end
 
-    subgraph config["Конфигурация"]
-        B["channel-brief.md<br/>аудитория, тон, ограничения"]
-    end
-
-    subgraph agent["Агент (Cursor)"]
-        R["Читает brief и контент-план"]
-        Q{"Нужны<br/>уточнения?"}
-        W["Пишет текст поста"]
-        V["Проверяет формат и тон"]
-    end
-
-    subgraph storage["Репозиторий"]
-        CP["content-plan/content-plan.md"]
-        D["posts/drafts/"]
-        S["posts/scheduled/"]
-        P["posts/published/"]
-    end
-
-    subgraph future["Этап 2 — планируется"]
-        CRON["Планировщик"]
-        BOT["Telegram Bot API"]
-        CH[("📢 Канал")]
-    end
-
-    U --> I
-    I --> R
-    B --> R
-    CP --> R
-    R --> Q
-    Q -->|да| U
-    Q -->|нет| W
-    W --> V
-    V --> D
-    V --> S
-    V --> CP
-
-    S -.->|по расписанию| CRON
-    CRON -.-> BOT
-    BOT -.-> CH
-    CH -.-> P
-
-    D -->|"редактура, дата назначена"| S
-    S -->|"опубликовано"| P
+    USER["Автор"] --> TELEGRAM["Telegram Bot API"]
+    TELEGRAM --> CODE
+    SERVICE --> CODE
+    ENV --> CODE
+    REPO --> CODE
+    CODE --> GLM["GLM 5.2 API"]
+    CODE --> CHANNEL["Telegram-канал"]
+    CODE --> REPO
 ```
 
 ## Жизненный цикл поста
 
 ```mermaid
 stateDiagram-v2
-    [*] --> idea: новая тема
-    idea --> draft: агент написал текст
-    draft --> scheduled: дата публикации назначена
-    scheduled --> published: пост вышел в канал
-    draft --> draft: правки
-    scheduled --> draft: перенос / доработка
+    [*] --> idea: идея в бот
+    idea --> options: 3 направления + 3 хука
+    options --> draft: выбран заход
+    draft --> scheduled: сохранить с датой
+    draft --> published: опубликовать сейчас
+    scheduled --> published: публикация позже
     published --> [*]
 ```
 
-## Структура репозитория
+## Структура
 
-```mermaid
-flowchart LR
-    ROOT["tg-bot-writer/"]
+| Путь | Назначение |
+|---|---|
+| `tg_bot_writer/` | код учебного бота |
+| `tests/` | unittest-тесты |
+| `docs/bot-contracts.md` | контракты поведения бота |
+| `.env.example` | шаблон переменных без секретов |
+| `channel-brief.md` | правила канала |
+| `content-plan/content-plan.md` | единый контент-план |
+| `posts/drafts/` | черновики |
+| `posts/scheduled/` | готовые посты с датой |
+| `posts/published/` | опубликованные посты |
 
-    ROOT --> AGENTS["AGENTS.md<br/>правила для агента"]
-    ROOT --> BRIEF["channel-brief.md<br/>профиль канала"]
-    ROOT --> PLAN["content-plan/content-plan.md<br/>единый контент-план"]
-    ROOT --> RECIPES["recipes/<br/>каталог рецептов"]
-    ROOT --> RESEARCH["research/<br/>исследования"]
-    ROOT --> POSTS["posts/"]
+## Локальный запуск
 
-    POSTS --> DRAFTS["drafts/<br/>черновики"]
-    POSTS --> SCHEDULED["scheduled/<br/>готовые с датой"]
-    POSTS --> PUBLISHED["published/<br/>архив"]
+```bash
+cp .env.example .env
+chmod 600 .env
+python3 -m unittest discover -s tests
+python3 -m tg_bot_writer.telegram_bot --dry-run
+python3 -m tg_bot_writer.telegram_bot
 ```
 
-## Как пользоваться
+Реальные значения кладутся только в `.env` или переменные окружения сервера.
 
-1. Заполни `channel-brief.md` — профиль канала.
-2. Открой папку в Cursor и опиши идею: *«Напиши пост про … на завтра»*.
-3. Агент сохранит файл в `posts/drafts/` или `posts/scheduled/` и обновит `content-plan/content-plan.md`.
-4. Проверь превью, при необходимости попроси правки.
+## Переменные окружения
 
-**План этапа 2** (канал, бот, автопубликация): [serejaris.github.io/tg-bot-writer](https://serejaris.github.io/tg-bot-writer/)
+| Переменная | Что хранит |
+|---|---|
+| `TELEGRAM_BOT_TOKEN` | токен Telegram-бота |
+| `TELEGRAM_CHANNEL_ID` | ID или username канала |
+| `GLM_API_KEY` | ключ GLM API |
+| `GLM_MODEL` | модель, сейчас `glm-5.2` |
+| `GLM_BASE_URL` | endpoint GLM API |
 
-Правила работы агента — в [`AGENTS.md`](AGENTS.md).
+## Сервер
+
+Учебный бот развёрнут на `CT305 / colvir-s05` под пользователем `student`.
+
+Проверки:
+
+```bash
+ssh -p 23005 student@158.69.127.134
+cd ~/tg-bot-writer
+python3 -m unittest discover -s tests
+python3 -m tg_bot_writer.telegram_bot --dry-run
+systemctl --user status tg-bot-writer.service
+```
+
+Секреты на сервере лежат в `/home/student/tg-bot-writer/.env` с правами `600`.
+
+## Правила
+
+- Не коммитить `.env`, токены и ключи.
+- Не публиковать в канал без явного подтверждения.
+- После работы по issue: тесты, коммит с `Refs #N`, push, комментарий в issue, закрытие.
+- Правила агента: [`AGENTS.md`](AGENTS.md).
